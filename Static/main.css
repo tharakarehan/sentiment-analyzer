@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+:root {
+  --primary-color: #3086c7;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 1rem;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .container .comlogo {
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem 2rem;
+}
+
+.platform .container {
+  width: 860px;
+  height: 344px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  padding-bottom: 0px;
+  padding-top: 0rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.75rem;
+  border: 0.35px solid #bbbaba;
+}
+
+.platform .container .leftcol #textlabel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0rem;
+  bottom: -0.25rem;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Source sans pro';
+}
+
+.platform .container .leftcol #message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0rem;
+  bottom: 0.0rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  font-size: 1.2rem;
+  font-family: 'Source sans pro';
+  resize: none;
+  width: 44.5%;
+  height: 12rem;
+}
+
+.platform .container .leftcol #button {
+  position: relative;
+  left: -14.50rem;
+  bottom: -0.15rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 10rem;
+  margin-top: 1.2rem;
+  border-radius: 4px;
+  background: #008bff;
+  font-size: 1.1rem;
+  font-weight: initial;
+  color: white;
+  border: none;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  .platform .container .vl {
+    border-left: 0.35px solid #bbbaba;
+    height: 93%;
+    position: relative;
+    left: 26.5rem;
+    bottom: 22.05rem;
+    padding-bottom: 0px;
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .platform .container .vl {
+    border-left: 0.35px solid #bbbaba;
+    height: 93%;
+    position: relative;
+    left: 26.5rem;
+    bottom: 22rem;
+    padding-bottom: 0px;
+    padding-top: 1.5rem;
+  }
+}
+
+@-moz-document url-prefix() {
+  .platform .container .vl {
+    border-left: 0.35px solid #bbbaba;
+    height: 93%;
+    position: relative;
+    left: 26.5rem;
+    bottom: 22rem;
+    padding-bottom: 0px;
+    padding-top: 1.5rem;
+  }
+}
+
+.platform .container .rightcol .sentiment1 {
+  position: relative;
+  left: 10.85rem;
+  bottom: 18.5rem;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Source sans pro';
+}
+
+.platform .container .rightcol .sentiment2 {
+  position: relative;
+  left: 3.8rem;
+  bottom: 15.8rem;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: 'Source sans pro';
+}
+
+.platform .container .rightcol .sentiment3 {
+  position: relative;
+  left: -0.4em;
+  bottom: 11.8rem;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: 'Source sans pro';
+}
+
+.platform .container .rightcol .sentiment4 {
+  position: relative;
+  left: -4.1em;
+  bottom: 7.5rem;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: 'Source sans pro';
+}
+
+.platform .container .w3-light-blue {
+  background: transparent;
+  border: 0.35px;
+  border-color: #02db93;
+  border-style: solid;
+  height: 8px;
+  position: relative;
+  left: 28rem;
+  bottom: 36.3rem;
+  border-radius: 4px;
+  width: 40%;
+}
+
+.platform .container .w3-light-blue .w3-blue {
+  height: 100%;
+  background-color: #02db93;
+  border-radius: 4px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .platform .container .w3-light-blue .container {
+    border: 1px solid #02db93;
+  }
+}
+
+@-moz-document url-prefix() {
+  .platform .container .w3-light-blue .container {
+    border: 0.35px solid #02db93;
+  }
+}
+
+.platform .container .w3-light-red {
+  background: transparent;
+  border: 0.35px;
+  border-color: #e02301;
+  border-style: solid;
+  height: 8px;
+  position: relative;
+  left: 28rem;
+  bottom: 32.7rem;
+  border-radius: 4px;
+  width: 40%;
+}
+
+.platform .container .w3-light-red .w3-red {
+  height: 100%;
+  background-color: #e02301;
+  border-radius: 4px;
+}
+
+.platform .container .w3-light-yellow {
+  background: transparent;
+  border: 0.35px;
+  border-color: #f0d910;
+  border-style: solid;
+  height: 8px;
+  position: relative;
+  left: 28rem;
+  bottom: 29rem;
+  border-radius: 4px;
+  width: 40%;
+}
+
+.platform .container .w3-light-yellow .w3-yellow {
+  height: 100%;
+  background-color: #f0d910;
+  border-radius: 4px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .platform .container .w3-light-blue {
+    border: 1px solid #02db93;
+  }
+  .platform .container .w3-light-red {
+    border: 1px solid #e02301;
+  }
+}
+
+@-moz-document url-prefix() {
+  .platform .container .w3-light-blue {
+    border: 0.35px solid #02db93;
+  }
+  .platform .container .w3-light-red {
+    border: 0.35px solid #e02301;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .platform .container {
+    border: 1px solid #bbbaba;
+  }
+}
+
+@-moz-document url-prefix() {
+  .platform .container {
+    border: 0.35px solid #bbbaba;
+  }
+}
+
+.platform .posper {
+  position: relative;
+  left: 24.9rem;
+  bottom: 39.6rem;
+}
+
+.platform .negper {
+  position: relative;
+  left: 24.9rem;
+  bottom: 37.95rem;
+}
+
+.platform .neuper {
+  position: relative;
+  left: 24.9rem;
+  bottom: 36.25rem;
+}
+
+.platform .time {
+  position: relative;
+  left: 28.1rem;
+  bottom: 36rem;
+  font-family: 'Source sans pro';
+  font-weight: normal;
+  font-size: 0.8rem;
+  background: transparent;
+  width: 17rem;
+  text-align: left;
+  color: #898888;
+}
+
+.platform .containerbottom {
+  width: 860px;
+  height: 200px;
+  text-align: left;
+  border-radius: 10px;
+  background-color: white;
+  padding-bottom: 0px;
+  padding-top: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.35px solid #bbbaba;
+  margin-top: 0.5rem;
+}
+
+.platform .containerbottom #labelbottom {
+  font-weight: bold;
+}
+
+.platform .containerbottom .textbottom {
+  border: 1px solid #008bff;
+  height: 72%;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+}
+
+.platform .containerbottom .textbottom #highlightedtext {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.1rem;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=main.css.map */

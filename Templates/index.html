@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment Analyzer</title>
+    <meta name="description" content="Sentiment Analyzer for Social Medias" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="{{ url_for('static', filename='images/Final_Logo-White.png') }}" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='main.css') }}" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+      <a class="logo" href="#">Sentiment<span>Analyzer</span></a>
+      <a target="_blank" href="https://ixdlabs.lk">
+      <img class="comlogo" src="{{ url_for('static', filename='images/Final_Logo-White.png') }}" width="100" height="30.3" />
+    </a>
+    </div>
+    </div>
+    <section class="platform">
+      <div class="container">
+        <div class="leftcol">
+            <form action="/" method='POST' role="form">
+              <label id="textlabel">Type Your Text Here</label>
+              <textarea
+              type="textarea"
+              id="message"
+              name="message"
+              cols="37"
+              rows="7"
+            >{{outputmessage}}</textarea>
+                <input type="submit" id="button" value="Submit" name="submit" />
+            </form>
+          </div>
+          <div class="rightcol">
+            <label class="sentiment1" >Sentiment</label>
+            <label class="sentiment2" >Positive</label>
+            <label class="sentiment3" >Negative</label>
+            <label class="sentiment4" >Neutral</label>
+          </div>
+          <div class="vl"></div>
+          <div class="w3-light-blue" >
+            <div class="w3-blue" style="width:{{positivevalue}}%"></div>
+          </div>
+          <div class="w3-light-red" >
+            <div class="w3-red" style="width:{{negativevalue}}%"></div>
+          </div>
+          <div class="w3-light-yellow" >
+            <div class="w3-yellow" style="width:{{neutralvalue}}%"></div>
+          </div>
+          <p class='posper'>{{positivevalue}}%</p>
+          <p class='negper'>{{negativevalue}}%</p>
+          <p class='neuper'>{{neutralvalue}}%</p>
+        <div class="time">
+          <p>Computational time on CPU : {{time}}ms</p>
+        </div>
+      </div>
+      <div class="containerbottom">
+        <label id=labelbottom>Sentence Analyzer</label>
+        <div class="textbottom">
+          <p id=highlightedtext>
+            {% for color,sen in senlist%}
+            <span style="background-color:{{color}}">{{sen}}</span>
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </section>
+  </body> 
+</html>
